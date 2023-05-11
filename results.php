@@ -10,7 +10,7 @@ $absFirstInt = abs($firstInt);
 $absSecInt = abs($secInt);
 
 // response for when user does not enter either/both of the integers
-if ((is_nan($firstInt)) || (is_nan($secInt))) {
+if ((!is_numeric($firstInt)) || (!is_numeric($secInt))) {
     echo "Please enter valid integers.";
 }
 
