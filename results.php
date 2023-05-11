@@ -23,11 +23,11 @@ else {
     }
   //if statements to make the product negative if needed
     if ($firstInt < 0) {
-    $product = $product * -1;
+        $product = $product * -1;
     }
     if ($secInt < 0) {
-    $product = $product * -1;
+        $product = $product * -1;
     }
 
-  echo $firstInt . " x " . $secInt . " = " . $product;
+    echo $firstInt . " x " . $secInt . " = " . $product;
 }
