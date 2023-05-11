@@ -18,15 +18,16 @@ if ((empty($firstInt)) || (empty($secInt))) {
 else {
     // for loop for the multiplication: by repeated addition of the first integer as many as the second integer
     for ($counter = 0; $counter < $absSecInt; $counter++) {
-        // increment the min by one for each execution of the loop
-        $product = $product + $absFirstInt;
-      }
-      if ($firstInt < 0) {
-        $product = $product * -1;
-      }
-      if ($secInt < 0) {
-        $product = $product * -1;
-      }
+      // increment the min by one for each execution of the loop
+      $product = $product + $absFirstInt;
+    }
+  //if statements to make the product negative if needed
+  if ($firstInt < 0) {
+    $product = $product * -1;
+  }
+  if ($secInt < 0) {
+    $product = $product * -1;
+  }
 
-    echo $firstInt . " x " . $secInt . " = " . $product;
+  echo $firstInt . " x " . $secInt . " = " . $product;
 }
