@@ -1,4 +1,5 @@
 <?php
+
 // initializing user's two integers and product as 0
 $firstInt = $_POST['f-int'];
 $secInt = $_POST['s-int'];
@@ -19,13 +20,13 @@ else {
     for ($counter = 0; $counter < $absSecInt; $counter++) {
         // increment the min by one for each execution of the loop
         $product = $product + $absFirstInt;
-    }
-  if ($firstInt < 0) {
-    $product = $product * -1;
-  }
-  if ($secInt < 0) {
-    $product = $product * -1;
-  }
+      }
+      if ($firstInt < 0) {
+        $product = $product * -1;
+      }
+      if ($secInt < 0) {
+        $product = $product * -1;
+      }
 
     echo $firstInt . " x " . $secInt . " = " . $product;
 }
